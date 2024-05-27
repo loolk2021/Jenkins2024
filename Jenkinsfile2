@@ -1,0 +1,11 @@
+node {
+    // This block will execute on any available agent (slave)
+
+    stage('Design') {
+        echo 'Design the car'
+    }
+
+    stage('Build') {
+        echo 'Build a concept car'
+    }
+}
