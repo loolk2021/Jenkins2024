@@ -12,6 +12,9 @@ pipeline {
             }
         }
         stage('Test') {
+			agent {
+                label 'linux_node2'
+            }
             steps {
                 dir('D:/Jenkin2024/test.bat') {
                     /* execute commands in the scripts directory */
