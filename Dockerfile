@@ -1,5 +1,5 @@
 # Use a minimal Windows Server Core base image
-FROM mcr.microsoft.com/windows/servercore:ltsc2019
+# FROM mcr.microsoft.com/windows/servercore:ltsc2019
 
 # Set the working directory in the container
 WORKDIR D:\Jenkin2024\Docker
