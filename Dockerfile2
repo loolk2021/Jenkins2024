@@ -1,15 +1,4 @@
-# Use a minimal Windows Server Core base image
-# FROM mcr.microsoft.com/windows/servercore:ltsc2019
-FROM openjdk:11
-
-# Set the working directory in the container
-WORKDIR D:\Jenkin2024\Docker
-
-# Copy the Java source code to the working directory
-COPY HelloWorld.java .
-
-# Compile the Java application
-RUN javac HelloWorld.java
-
-# Command to run the Java application
-CMD ["java", "HelloWorld"]
+FROM mcr.microsoft.com/windows/servercore:ltsc2019-amd64
+RUN net user Michael P@ssw0rd /ADD
+COPY . /
+RUN msiexec /quiet /i sample.msi ACCOUNT=%COMPUTERNAME%\Michael PASSWORD=P@ssw0rd
